@@ -1,3 +1,6 @@
+"""
+Upload chunks to S3
+"""
 import boto3
 from dotenv import load_dotenv
 import os
@@ -13,13 +16,9 @@ s3 = boto3.client('s3',
 
 raw_bucket = os.getenv('S3_RAW_BUCKET')
 
-print(f"Uploading chunks to s3://{raw_bucket}/chunks/\n")
-
 chunk_files = [f for f in os.listdir('data/chunks') if f.endswith('.parquet')]
 
 for chunk_file in tqdm(chunk_files, desc="Uploading"):
-    local_path = f"data/chunks/{chunk_file}"
-    s3_key = f"chunks/{chunk_file}"
-    s3.upload_file(local_path, raw_bucket, s3_key)
+    s3.upload_file(f'data/chunks/{chunk_file}', raw_bucket, f'chunks/{chunk_file}')
 
-print(f"\nUploaded {len(chunk_files)} chunks!")
+print(f"\n✓ Uploaded {len(chunk_files)} chunks")

@@ -1,3 +1,6 @@
+"""
+Invoke Lambda to process each chunk
+"""
 import boto3
 import json
 from dotenv import load_dotenv
@@ -21,18 +24,18 @@ s3 = boto3.client('s3',
 raw_bucket = os.getenv('S3_RAW_BUCKET')
 processed_bucket = os.getenv('S3_PROCESSED_BUCKET')
 
-print("Listing chunks in S3...\n")
-
+print("Listing chunks...")
 response = s3.list_objects_v2(Bucket=raw_bucket, Prefix='chunks/')
 chunks = [obj['Key'] for obj in response.get('Contents', [])]
 
-print(f"Found {len(chunks)} chunks to process\n")
+print(f"Found {len(chunks)} chunks\n")
 
 for chunk_key in tqdm(chunks, desc="Processing"):
     payload = {
         'raw_bucket': raw_bucket,
         'processed_bucket': processed_bucket,
-        'chunk_key': chunk_key
+        'chunk_key': chunk_key,
+        'user_threshold': 150
     }
     
     response = lambda_client.invoke(
@@ -43,6 +46,6 @@ for chunk_key in tqdm(chunks, desc="Processing"):
     
     result = json.loads(response['Payload'].read())
     if result.get('statusCode') != 200:
-        print(f"\nError processing {chunk_key}: {result}")
+        print(f"\nError: {chunk_key}: {result}")
 
-print("\nAll chunks processed!")
+print("\n✓ All chunks processed")
