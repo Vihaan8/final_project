@@ -4,6 +4,8 @@ import Results from './pages/Results'
 import './App.css'
 
 function App() {
+  console.log('App component rendering')
+  
   return (
     <Router>
       <Routes>
