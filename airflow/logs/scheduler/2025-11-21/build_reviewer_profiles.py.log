@@ -4649,3 +4649,311 @@
 [2025-11-21T08:23:05.111+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:23:05.111+0000] {dag.py:2941} INFO - Sync 1 DAGs
 [2025-11-21T08:23:05.122+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:23:05.122+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
 [2025-11-21T08:23:05.132+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 4.193 seconds
+[2025-11-21T08:23:35.259+0000] {processor.py:157} INFO - Started process (PID=4049) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:23:35.260+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:23:35.261+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:23:35.260+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:23:35.793+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:23:35.802+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:23:35.801+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:23:35.805+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:23:35.805+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:23:35.811+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.555 seconds
+[2025-11-21T08:24:06.038+0000] {processor.py:157} INFO - Started process (PID=4055) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:24:06.039+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:24:06.040+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:24:06.040+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:24:06.674+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:24:06.694+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:24:06.694+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:24:06.700+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:24:06.699+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:24:06.707+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.673 seconds
+[2025-11-21T08:24:36.895+0000] {processor.py:157} INFO - Started process (PID=4061) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:24:36.895+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:24:36.896+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:24:36.896+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:24:37.147+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:24:37.157+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:24:37.157+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:24:37.161+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:24:37.161+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:24:37.166+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.274 seconds
+[2025-11-21T08:25:07.431+0000] {processor.py:157} INFO - Started process (PID=4067) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:25:07.432+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:25:07.433+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:25:07.432+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:25:07.888+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:25:07.900+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:25:07.900+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:25:07.904+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:25:07.904+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:25:07.911+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.485 seconds
+[2025-11-21T08:25:38.182+0000] {processor.py:157} INFO - Started process (PID=4073) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:25:38.183+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:25:38.184+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:25:38.184+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:25:38.445+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:25:38.456+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:25:38.455+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:25:38.460+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:25:38.460+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:25:38.466+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.291 seconds
+[2025-11-21T08:26:08.747+0000] {processor.py:157} INFO - Started process (PID=4079) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:26:08.748+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:26:08.750+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:26:08.749+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:26:09.059+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:26:09.070+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:26:09.070+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:26:09.074+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:26:09.074+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:26:09.080+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.340 seconds
+[2025-11-21T08:26:39.351+0000] {processor.py:157} INFO - Started process (PID=4085) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:26:39.352+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:26:39.353+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:26:39.352+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:26:39.610+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:26:39.620+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:26:39.620+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:26:39.624+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:26:39.624+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:26:39.630+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.285 seconds
+[2025-11-21T08:27:09.914+0000] {processor.py:157} INFO - Started process (PID=4091) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:27:09.916+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:27:09.919+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:27:09.917+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:27:10.313+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:27:10.325+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:27:10.325+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:27:10.329+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:27:10.329+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:27:10.335+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.433 seconds
+[2025-11-21T08:27:40.591+0000] {processor.py:157} INFO - Started process (PID=4097) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:27:40.592+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:27:40.592+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:27:40.592+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:27:40.824+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:27:40.834+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:27:40.834+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:27:40.838+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:27:40.838+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:27:40.844+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.255 seconds
+[2025-11-21T08:28:11.041+0000] {processor.py:157} INFO - Started process (PID=4103) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:28:11.042+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:28:11.043+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:28:11.042+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:28:11.268+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:28:11.278+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:28:11.278+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:28:11.281+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:28:11.281+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:28:11.287+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.250 seconds
+[2025-11-21T08:28:41.527+0000] {processor.py:157} INFO - Started process (PID=4109) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:28:41.528+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:28:41.529+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:28:41.529+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:28:41.764+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:28:41.778+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:28:41.777+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:28:41.782+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:28:41.782+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:28:41.789+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.266 seconds
+[2025-11-21T08:29:12.037+0000] {processor.py:157} INFO - Started process (PID=4115) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:29:12.038+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:29:12.038+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:29:12.038+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:29:12.341+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:29:12.352+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:29:12.351+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:29:12.356+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:29:12.356+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:29:12.363+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.330 seconds
+[2025-11-21T08:29:42.930+0000] {processor.py:157} INFO - Started process (PID=4121) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:29:42.932+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:29:42.933+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:29:42.933+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:29:43.362+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:29:43.375+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:29:43.374+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:29:43.379+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:29:43.379+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:29:43.385+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.460 seconds
+[2025-11-21T08:30:13.646+0000] {processor.py:157} INFO - Started process (PID=4127) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:30:13.650+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:30:13.653+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:30:13.652+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:30:14.150+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:30:14.179+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:30:14.179+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:30:14.183+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:30:14.183+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:30:14.190+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.558 seconds
+[2025-11-21T08:30:44.414+0000] {processor.py:157} INFO - Started process (PID=4133) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:30:44.415+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:30:44.415+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:30:44.415+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:30:44.703+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:30:44.718+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:30:44.718+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:30:44.722+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:30:44.722+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:30:44.730+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.318 seconds
+[2025-11-21T08:31:15.024+0000] {processor.py:157} INFO - Started process (PID=4139) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:31:15.026+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:31:15.027+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:31:15.027+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:31:15.369+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:31:15.380+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:31:15.380+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:31:15.385+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:31:15.385+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:31:15.391+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.374 seconds
+[2025-11-21T08:31:45.620+0000] {processor.py:157} INFO - Started process (PID=4145) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:31:45.621+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:31:45.621+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:31:45.621+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:31:45.937+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:31:45.953+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:31:45.952+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:31:45.958+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:31:45.958+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:31:45.966+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.348 seconds
+[2025-11-21T08:32:16.168+0000] {processor.py:157} INFO - Started process (PID=4151) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:32:16.170+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:32:16.171+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:32:16.170+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:32:16.515+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:32:16.529+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:32:16.528+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:32:16.534+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:32:16.533+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:32:16.542+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.377 seconds
+[2025-11-21T08:32:46.922+0000] {processor.py:157} INFO - Started process (PID=4157) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:32:46.923+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:32:46.924+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:32:46.924+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:32:47.243+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:32:47.254+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:32:47.254+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:32:47.259+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:32:47.259+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:32:47.265+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.347 seconds
+[2025-11-21T08:33:17.519+0000] {processor.py:157} INFO - Started process (PID=4163) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:33:17.520+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:33:17.521+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:33:17.521+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:33:17.759+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:33:17.769+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:33:17.769+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:33:17.772+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:33:17.772+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:33:17.779+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.265 seconds
+[2025-11-21T08:33:47.996+0000] {processor.py:157} INFO - Started process (PID=4169) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:33:47.997+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:33:47.998+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:33:47.998+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:33:48.228+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:33:48.237+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:33:48.236+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:33:48.240+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:33:48.240+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:33:48.246+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.254 seconds
+[2025-11-21T08:34:18.455+0000] {processor.py:157} INFO - Started process (PID=4175) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:34:18.456+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:34:18.457+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:34:18.457+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:34:18.783+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:34:18.795+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:34:18.795+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:34:18.799+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:34:18.799+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:34:18.806+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.358 seconds
+[2025-11-21T08:34:49.061+0000] {processor.py:157} INFO - Started process (PID=4181) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:34:49.062+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:34:49.063+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:34:49.062+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:34:49.306+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:34:49.315+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:34:49.315+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:34:49.319+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:34:49.319+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:34:49.325+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.268 seconds
+[2025-11-21T08:35:19.583+0000] {processor.py:157} INFO - Started process (PID=4187) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:35:19.584+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:35:19.585+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:35:19.585+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:35:19.829+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:35:19.839+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:35:19.839+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:35:19.843+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:35:19.843+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:35:19.849+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.272 seconds
+[2025-11-21T08:35:50.113+0000] {processor.py:157} INFO - Started process (PID=4193) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:35:50.114+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:35:50.115+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:35:50.115+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:35:50.432+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:35:50.444+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:35:50.443+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:35:50.448+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:35:50.448+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:35:50.454+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.347 seconds
+[2025-11-21T08:36:20.706+0000] {processor.py:157} INFO - Started process (PID=4199) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:36:20.707+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:36:20.707+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:36:20.707+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:36:20.944+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:36:20.954+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:36:20.954+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:36:20.958+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:36:20.958+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:36:20.964+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.262 seconds
+[2025-11-21T08:36:51.212+0000] {processor.py:157} INFO - Started process (PID=4205) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:36:51.213+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:36:51.214+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:36:51.214+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:36:51.460+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:36:51.471+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:36:51.470+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:36:51.475+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:36:51.475+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:36:51.480+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.273 seconds
+[2025-11-21T08:37:21.702+0000] {processor.py:157} INFO - Started process (PID=4211) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:37:21.703+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:37:21.704+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:37:21.704+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:37:21.930+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:37:21.940+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:37:21.940+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:37:21.945+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:37:21.945+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:37:21.952+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.255 seconds
+[2025-11-21T08:37:52.205+0000] {processor.py:157} INFO - Started process (PID=4217) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:37:52.206+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:37:52.207+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:37:52.207+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:37:52.578+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:37:52.592+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:37:52.591+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:37:52.596+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:37:52.596+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:37:52.602+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.403 seconds
+[2025-11-21T08:38:22.858+0000] {processor.py:157} INFO - Started process (PID=4223) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:38:22.859+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:38:22.860+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:38:22.860+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:38:23.118+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:38:23.129+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:38:23.129+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:38:23.133+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:38:23.133+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:38:23.139+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.287 seconds
+[2025-11-21T08:38:53.416+0000] {processor.py:157} INFO - Started process (PID=4229) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:38:53.417+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:38:53.418+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:38:53.418+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:38:53.735+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:38:53.747+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:38:53.747+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:38:53.751+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:38:53.751+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:38:53.758+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.348 seconds
+[2025-11-21T08:39:24.001+0000] {processor.py:157} INFO - Started process (PID=4235) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:39:24.002+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:39:24.003+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:39:24.003+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:39:24.235+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:39:24.244+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:39:24.244+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:39:24.248+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:39:24.248+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:39:24.254+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.257 seconds
+[2025-11-21T08:39:54.507+0000] {processor.py:157} INFO - Started process (PID=4241) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:39:54.508+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:39:54.509+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:39:54.509+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:39:54.754+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:39:54.764+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:39:54.764+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:39:54.768+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:39:54.768+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:39:54.773+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.271 seconds
+[2025-11-21T08:40:25.024+0000] {processor.py:157} INFO - Started process (PID=4247) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:40:25.025+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:40:25.026+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:40:25.026+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:40:25.261+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:40:25.271+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:40:25.271+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:40:25.274+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:40:25.274+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:40:25.280+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.261 seconds
+[2025-11-21T08:40:55.543+0000] {processor.py:157} INFO - Started process (PID=4253) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:40:55.544+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:40:55.546+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:40:55.545+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:40:55.849+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:40:55.861+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:40:55.860+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:40:55.864+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:40:55.864+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:40:55.870+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.333 seconds
+[2025-11-21T08:41:26.174+0000] {processor.py:157} INFO - Started process (PID=4259) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:41:26.175+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:41:26.175+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:41:26.175+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:41:26.445+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:41:26.458+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:41:26.457+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:41:26.462+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:41:26.462+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:41:26.469+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.300 seconds
+[2025-11-21T08:41:56.727+0000] {processor.py:157} INFO - Started process (PID=4265) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:41:56.728+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:41:56.729+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:41:56.728+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:41:57.004+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:41:57.024+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:41:57.021+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:41:57.031+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:41:57.030+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:41:57.040+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.317 seconds
+[2025-11-21T08:42:27.275+0000] {processor.py:157} INFO - Started process (PID=4271) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:42:27.276+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:42:27.278+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:42:27.277+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:42:27.568+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:42:27.577+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:42:27.577+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:42:27.582+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:42:27.581+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:42:27.588+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.319 seconds
+[2025-11-21T08:42:57.839+0000] {processor.py:157} INFO - Started process (PID=4277) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:42:57.840+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:42:57.840+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:42:57.840+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:42:58.083+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:42:58.094+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:42:58.094+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:42:58.098+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:42:58.098+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:42:58.104+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.270 seconds
+[2025-11-21T08:43:28.348+0000] {processor.py:157} INFO - Started process (PID=4283) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:43:28.349+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:43:28.350+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:43:28.350+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:43:28.567+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:43:28.576+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:43:28.576+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:43:28.580+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:43:28.580+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:43:28.586+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.242 seconds
+[2025-11-21T08:43:58.705+0000] {processor.py:157} INFO - Started process (PID=4289) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:43:58.706+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:43:58.712+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:43:58.711+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:43:59.192+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:43:59.211+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:43:59.210+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:43:59.218+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:43:59.218+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:43:59.223+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.538 seconds
+[2025-11-21T08:44:29.396+0000] {processor.py:157} INFO - Started process (PID=4295) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:44:29.396+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:44:29.397+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:44:29.396+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:44:29.674+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:44:29.687+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:44:29.686+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:44:29.692+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:44:29.692+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:44:29.699+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.306 seconds
+[2025-11-21T08:45:00.090+0000] {processor.py:157} INFO - Started process (PID=4301) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:45:00.091+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:45:00.091+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:45:00.091+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:45:00.265+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:45:00.277+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:45:00.277+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:45:00.281+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:45:00.281+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:45:00.287+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.199 seconds
+[2025-11-21T08:45:30.377+0000] {processor.py:157} INFO - Started process (PID=4307) to work on /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:45:30.378+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/build_reviewer_profiles.py for tasks to queue
+[2025-11-21T08:45:30.379+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:45:30.378+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:45:30.673+0000] {processor.py:839} INFO - DAG(s) dict_keys(['build_reviewer_profiles']) retrieved from /opt/airflow/dags/build_reviewer_profiles.py
+[2025-11-21T08:45:30.716+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:45:30.715+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-11-21T08:45:30.729+0000] {logging_mixin.py:154} INFO - [2025-11-21T08:45:30.727+0000] {dag.py:3722} INFO - Setting next_dagrun for build_reviewer_profiles to None, run_after=None
+[2025-11-21T08:45:30.754+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/build_reviewer_profiles.py took 0.383 seconds
