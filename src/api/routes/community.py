@@ -4,9 +4,10 @@ Community feed endpoints
 from fastapi import APIRouter, HTTPException
 from typing import List
 import psycopg2
+import os
 from pydantic import BaseModel
 
-router = APIRouter(prefix="/api/community", tags=["community"])
+router = APIRouter(tags=["community"])
 
 class QuizSubmissionResponse(BaseModel):
     submission_id: int
@@ -21,8 +22,9 @@ class QuizSubmissionResponse(BaseModel):
 async def get_community_feed(limit: int = 20):
     """Get recent quiz submissions"""
     try:
+        db_host = os.getenv('DB_HOST', 'localhost')
         conn = psycopg2.connect(
-            host='localhost',
+            host=db_host,
             database='dinelike',
             user='dinelike',
             password='dinelike123'
@@ -61,8 +63,9 @@ async def get_community_feed(limit: int = 20):
 async def get_community_stats():
     """Get community statistics"""
     try:
+        db_host = os.getenv('DB_HOST', 'localhost')
         conn = psycopg2.connect(
-            host='localhost',
+            host=db_host,
             database='dinelike',
             user='dinelike',
             password='dinelike123'

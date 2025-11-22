@@ -29,10 +29,10 @@ app.add_middleware(
 )
 
 # Include routers
-app.include_router(restaurants.router, prefix="/api/restaurants", tags=["restaurants"])
-app.include_router(quiz.router, prefix="/api/quiz", tags=["quiz"])
-app.include_router(community.router, prefix="/api/community", tags=["community"])
-app.include_router(results.router, prefix="/api/results", tags=["results"])
+app.include_router(restaurants.router)
+app.include_router(quiz.router)
+app.include_router(community.router)
+app.include_router(results.router)
 
 @app.get("/")
 async def root():
