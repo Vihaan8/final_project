@@ -31,6 +31,65 @@ jobs:
         run: |
           pytest tests/unit/ -v --cov=src/matching --cov-report=term-missing
 
+  integration-tests:
+    name: Integration Tests (No Data Required)
+    runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_DB: dinelike_test
+          POSTGRES_USER: dinelike
+          POSTGRES_PASSWORD: dinelike123
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest httpx
+          pip install -r requirements.txt
+          pip install -r requirements-api.txt
+      
+      - name: Set environment variables
+        run: |
+          echo "DB_HOST=localhost" >> $GITHUB_ENV
+          echo "KAFKA_BOOTSTRAP_SERVERS=localhost:9092" >> $GITHUB_ENV
+      
+      - name: Create test database schema
+        run: |
+          PGPASSWORD=dinelike123 psql -h localhost -U dinelike -d dinelike_test -c "
+          CREATE TABLE IF NOT EXISTS quiz_submissions (
+            submission_id SERIAL PRIMARY KEY,
+            display_name VARCHAR(255),
+            city VARCHAR(100),
+            state VARCHAR(2),
+            tags JSONB,
+            top_twin_user_id VARCHAR(50),
+            top_twin_name VARCHAR(255),
+            match_score DECIMAL(5,2),
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+          );"
+      
+      - name: Run integration tests (subset that works without full data)
+        run: |
+          pytest tests/integration/ -v -k "health or missing_fields or stats or cors or root or concurrent or data_types"
+
   docker-build:
     name: Docker Build Verification
     runs-on: ubuntu-latest
