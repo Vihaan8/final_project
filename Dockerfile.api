@@ -22,9 +22,6 @@ RUN pip install --no-cache-dir pandas pyarrow tqdm
 # Copy application code
 COPY src/ ./src/
 
-# Copy .env if it exists (optional for CI/CD)
-COPY .en[v] .env* 2>/dev/null || true
-
 # Expose port
 EXPOSE 8000
 
