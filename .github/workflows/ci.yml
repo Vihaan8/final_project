@@ -25,6 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest pytest-cov
           pip install -r requirements.txt
+          pip install -r requirements-api.txt
       
       - name: Run unit tests
         run: |
@@ -63,6 +64,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest
           pip install -r requirements.txt
+          pip install -r requirements-api.txt
       
       - name: Set environment variables
         run: |
@@ -91,7 +93,7 @@ jobs:
       
       - name: Test docker-compose config
         run: |
-          docker-compose config
+          docker compose config
 
   lint:
     name: Code Quality
