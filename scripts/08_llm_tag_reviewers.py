@@ -9,9 +9,31 @@ import os
 from tqdm import tqdm
 import time
 from concurrent.futures import ThreadPoolExecutor
+import shutil
 
 load_dotenv()
 
+# AIRFLOW MODE CHECK - Skip LLM tagging if enabled
+AIRFLOW_MODE = os.getenv('AIRFLOW_MODE', 'false').lower() == 'true'
+
+if AIRFLOW_MODE:
+    print("=" * 60)
+    print("⚠️  AIRFLOW MODE: Skipping LLM tagging")
+    print("⚠️  Using existing reviewer_profiles_llm.parquet")
+    print("=" * 60)
+    
+    # Just copy existing profiles
+    os.makedirs('data/checkpoints', exist_ok=True)
+    shutil.copy(
+        'data/final/reviewer_profiles_llm.parquet',
+        'data/checkpoints/profiles_airflow.parquet'
+    )
+    
+    print("✓ Copied existing profiles to checkpoints/")
+    print("✓ Skipping expensive LLM API calls")
+    exit(0)
+
+# Continue with normal LLM tagging if not in Airflow mode
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
 print("Loading data...")
@@ -76,15 +98,14 @@ def extract_tags(user_id, user_reviews, user_avg_rating):
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[{"role": "user", "content": prompt}],
-            temperature=0.1,  # Lower for more consistent output
+            temperature=0.1,
             max_tokens=300,
-            response_format={"type": "json_object"}  # Force JSON mode
+            response_format={"type": "json_object"}
         )
         
         response_text = response.choices[0].message.content.strip()
         tags = json.loads(response_text)
         
-        # Validate and fix if needed
         tags = validate_tags(tags, user_reviews, user_avg_rating)
         return tags
         
@@ -105,25 +126,21 @@ def validate_tags(tags, user_reviews, user_avg_rating):
     
     validated = {}
     
-    # Priorities (array)
     priorities = tags.get('priorities', [])
     if not isinstance(priorities, list):
         priorities = [priorities] if priorities else []
     validated['priorities'] = [p for p in priorities if p in ALLOWED['priorities']][:2]
     
-    # Dining style (array)
     styles = tags.get('dining_style', [])
     if not isinstance(styles, list):
         styles = [styles] if styles else []
     validated['dining_style'] = [s for s in styles if s in ALLOWED['dining_style']][:2]
     
-    # Meal timing (array)
     meals = tags.get('meal_timing', [])
     if not isinstance(meals, list):
         meals = [meals] if meals else []
     validated['meal_timing'] = [m for m in meals if m in ALLOWED['meal_timing']]
     
-    # Cuisines (array, filter out non-cuisines)
     cuisines = tags.get('cuisine_preferences', [])
     if not isinstance(cuisines, list):
         cuisines = []
@@ -133,16 +150,13 @@ def validate_tags(tags, user_reviews, user_avg_rating):
         if len(str(c)) > 2 and not any(inv in str(c).lower() for inv in invalid_items)
     ]
     
-    # Adventure level (scalar)
     adventure = tags.get('adventure_level')
     if adventure in ALLOWED['adventure_level']:
         validated['adventure_level'] = adventure
     else:
-        # Fallback based on rating variance
         rating_std = user_reviews['stars'].std()
         validated['adventure_level'] = 'adventurous' if rating_std > 1.5 else 'moderate'
     
-    # Price sensitivity (scalar)
     price = tags.get('price_sensitivity')
     if price in ALLOWED['price_sensitivity']:
         validated['price_sensitivity'] = price
@@ -189,13 +203,11 @@ for batch_start in tqdm(range(0, len(df_users), batch_size), desc="Batches"):
     
     profiles.extend(batch_results)
     
-    # Checkpoint
     if batch_end % 1000 == 0 or batch_end == len(df_users):
         checkpoint_df = pd.DataFrame(profiles)
         checkpoint_df.to_parquet(f'data/checkpoints/profiles_strict_{batch_end}.parquet', index=False)
         print(f"\n✓ Checkpoint: {batch_end} users")
 
-# Save final
 df_profiles = pd.DataFrame(profiles)
 df_profiles.to_parquet('data/final/reviewer_profiles_llm_v2.parquet', index=False)
 
