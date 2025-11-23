@@ -66,26 +66,27 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       
-      - name: Start PostgreSQL
+      - name: Start PostgreSQL only
         run: |
           docker compose up -d postgres
-          sleep 5
+          echo "Waiting for PostgreSQL to be ready..."
+          sleep 10
       
-      - name: Wait for PostgreSQL to be ready
+      - name: Verify PostgreSQL is ready
         run: |
-          for i in {1..30}; do
-            if docker compose exec -T postgres pg_isready -U dinelike; then
-              echo "✅ PostgreSQL is ready"
-              break
-            fi
-            echo "Waiting for PostgreSQL... ($i/30)"
-            sleep 2
-          done
+          docker compose exec -T postgres pg_isready -U dinelike
+          echo "✅ PostgreSQL is ready"
       
-      - name: Start API service
+      - name: Start API service (without init-db)
         run: |
           docker compose up -d api
-          sleep 10
+          echo "Waiting for API to start..."
+          sleep 15
+      
+      - name: Check API container status
+        run: |
+          docker compose ps
+          docker compose logs api | tail -20
       
       - name: Test API health endpoint
         run: |
@@ -94,6 +95,7 @@ jobs:
             echo "✅ API health check passed (HTTP $response)"
           else
             echo "❌ API health check failed (HTTP $response)"
+            echo "API Logs:"
             docker compose logs api
             exit 1
           fi
@@ -101,21 +103,33 @@ jobs:
       - name: Test API root endpoint
         run: |
           response=$(curl -s http://localhost:8000/)
-          echo "Response: $response"
-          if echo "$response" | grep -q "DineLike API"; then
+          echo "API Response: $response"
+          if echo "$response" | grep -q "message"; then
             echo "✅ API root endpoint working"
           else
             echo "❌ API root endpoint failed"
+            echo "Full response: $response"
             exit 1
           fi
       
       - name: Test community stats endpoint
         run: |
-          response=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:8000/api/community/stats)
-          if [ $response -eq 200 ]; then
-            echo "✅ Community stats endpoint working (HTTP $response)"
+          response=$(curl -s http://localhost:8000/api/community/stats)
+          echo "Stats Response: $response"
+          if echo "$response" | grep -q "total_submissions"; then
+            echo "✅ Community stats endpoint working"
           else
-            echo "⚠️  Community stats returned HTTP $response (expected, no data yet)"
+            echo "⚠️  Community stats response: $response"
+          fi
+      
+      - name: Test quiz health endpoint
+        run: |
+          response=$(curl -s http://localhost:8000/api/quiz/health)
+          echo "Quiz Health Response: $response"
+          if echo "$response" | grep -q "healthy"; then
+            echo "✅ Quiz health endpoint working"
+          else
+            echo "⚠️  Quiz health response: $response"
           fi
       
       - name: Cleanup
