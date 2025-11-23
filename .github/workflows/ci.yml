@@ -66,6 +66,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       
+      - name: Create .env file for CI
+        run: |
+          cat > .env << 'ENVFILE'
+          DB_HOST=postgres
+          DB_PORT=5432
+          DB_NAME=dinelike
+          DB_USER=dinelike
+          DB_PASSWORD=dinelike123
+          KAFKA_BOOTSTRAP_SERVERS=kafka:9092
+          KAFKA_TOPIC=quiz_submissions
+          ENVFILE
+      
       - name: Start PostgreSQL only
         run: |
           docker compose up -d postgres
@@ -77,28 +89,67 @@ jobs:
           docker compose exec -T postgres pg_isready -U dinelike
           echo "✅ PostgreSQL is ready"
       
-      - name: Start API service (without init-db)
+      - name: Create database schema manually (skip init-db)
         run: |
-          docker compose up -d api
+          docker compose exec -T postgres psql -U dinelike -d dinelike << 'SQL'
+          CREATE TABLE IF NOT EXISTS quiz_submissions (
+            submission_id SERIAL PRIMARY KEY,
+            display_name VARCHAR(255),
+            city VARCHAR(100),
+            state VARCHAR(2),
+            tags JSONB,
+            top_twin_user_id VARCHAR(50),
+            top_twin_name VARCHAR(255),
+            match_score DECIMAL(5,2),
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+          );
+          
+          CREATE TABLE IF NOT EXISTS reviewers (
+            user_id VARCHAR(50) PRIMARY KEY,
+            name VARCHAR(255),
+            review_count INTEGER,
+            tags JSONB
+          );
+          
+          CREATE TABLE IF NOT EXISTS restaurants (
+            business_id VARCHAR(50) PRIMARY KEY,
+            name VARCHAR(255),
+            city VARCHAR(100),
+            state VARCHAR(2),
+            stars DECIMAL(2,1),
+            review_count INTEGER,
+            categories TEXT
+          );
+          SQL
+          echo "✅ Database schema created"
+      
+      - name: Build and start API (without dependencies)
+        run: |
+          docker compose build api
+          docker compose up -d --no-deps api
           echo "Waiting for API to start..."
           sleep 15
       
       - name: Check API container status
         run: |
           docker compose ps
-          docker compose logs api | tail -20
+          echo "API Logs:"
+          docker compose logs api | tail -30
       
       - name: Test API health endpoint
         run: |
-          response=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:8000/health)
-          if [ $response -eq 200 ]; then
-            echo "✅ API health check passed (HTTP $response)"
-          else
-            echo "❌ API health check failed (HTTP $response)"
-            echo "API Logs:"
-            docker compose logs api
-            exit 1
-          fi
+          for i in {1..10}; do
+            response=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:8000/health)
+            if [ $response -eq 200 ]; then
+              echo "✅ API health check passed (HTTP $response)"
+              exit 0
+            fi
+            echo "Attempt $i: HTTP $response, retrying..."
+            sleep 3
+          done
+          echo "❌ API health check failed after 10 attempts"
+          docker compose logs api
+          exit 1
       
       - name: Test API root endpoint
         run: |
@@ -108,7 +159,6 @@ jobs:
             echo "✅ API root endpoint working"
           else
             echo "❌ API root endpoint failed"
-            echo "Full response: $response"
             exit 1
           fi
       
@@ -119,7 +169,7 @@ jobs:
           if echo "$response" | grep -q "total_submissions"; then
             echo "✅ Community stats endpoint working"
           else
-            echo "⚠️  Community stats response: $response"
+            echo "⚠️  Stats endpoint response: $response"
           fi
       
       - name: Test quiz health endpoint
