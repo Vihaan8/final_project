@@ -69,10 +69,10 @@ const Quiz = () => {
         { value: 'thai', label: 'Thai', image: 'https://images.unsplash.com/photo-1559314809-0d155014e29e?w=400' },
         { value: 'indian', label: 'Indian', image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400' },
         { value: 'seafood', label: 'Seafood', image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400' },
-        { value: 'vietnamese', label: 'Vietnamese', image: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400' },
+        { value: 'vietnamese', label: 'Vietnamese', image: 'https://images.unsplash.com/photo-1555126634-323283e090fa?w=400' },
         { value: 'greek', label: 'Greek', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=400' },
         { value: 'french', label: 'French', image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400' },
-        { value: 'korean', label: 'Korean', image: 'https://images.unsplash.com/photo-1532980400857-e8d9d275d858?w=400' }
+        { value: 'korean', label: 'Korean', image: 'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=400' }
       ]
     },
     {
@@ -83,7 +83,7 @@ const Quiz = () => {
         { value: 'traditional', label: 'Traditional - stick to familiar favorites', image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=400' },
         { value: 'moderate', label: 'Moderate - try new things occasionally', image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400' },
         { value: 'adventurous', label: 'Adventurous - love unique experiences', image: 'https://images.unsplash.com/photo-1559314809-0d155014e29e?w=400' },
-        { value: 'very_adventurous', label: 'Very adventurous - the weirder the better!', image: 'https://images.unsplash.com/photo-1604908815453-3b4c0f1f7e66?w=400' }
+        { value: 'very_adventurous', label: 'Very adventurous - the weirder the better!', image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400' }
       ]
     },
     {
