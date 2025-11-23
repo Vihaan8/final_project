@@ -64,3 +64,8 @@ docker-compose.override.yml
 airflow/logs/
 airflow/*.db
 airflow/*.pid
+
+# Airflow
+airflow/logs/
+airflow/*.db
+airflow/*.pid
