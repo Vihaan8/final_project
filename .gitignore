@@ -59,3 +59,8 @@ htmlcov/
 
 # Docker
 docker-compose.override.yml
+
+# Airflow
+airflow/logs/
+airflow/*.db
+airflow/*.pid
